@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-ewuiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Question</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <img id="myimg" class="h-[100px]" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif">
+        <h1 id="question" class="text-4xl my-4 text-center">Will you be my Valentine?</h1>
+
+        <div class="buttongroup">
+            <button id="btn1"type="button" class="btn-yes " onclick="changeImage()">Yes</button>
+            <button id="btn2" type="button" class="btn-no" onclick="changemood()">No</button>
+        </div>
+    </div>
+    
+
+    <script>
+        function changeImage(){
+            var img = document.getElementById('myimg');
+            img.src = './image2.gif';
+
+            var header = document.getElementById('question');
+            header.innerText = 'Yaaaaaay!!!!!';
+
+            var button = document.getElementById('btn1');
+            button.style.display = 'none';
+
+            var button = document.getElementById('btn2');
+            button.style.display = 'none';
+        }
+
+        function changemood(){
+            var img = document.getElementById('myimg');
+            img.src = 'https://i.pinimg.com/originals/08/a2/47/08a247bbbde87c466a1edda1dbaf2788.gif';
+
+            var header = document.getElementById('question');
+            header.innerText = 'You broke my HEART';
+
+            var button = document.getElementById('btn1');
+            button.style.display = 'none';
+
+            var button = document.getElementById('btn2');
+            button.style.display = 'none';
+
+        
+        }
+    </script>
+
+</body>
+</html>
