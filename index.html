@@ -15,8 +15,8 @@
         <h1 id="question" class="text-4xl my-4 text-center">Will you be my Valentine?</h1>
 
         <div class="buttongroup">
-            <button id="btn1"type="button" class="btn-yes " onclick="changeImage()">Yes</button>
-            <button id="btn2" type="button" class="btn-no" onclick="changemood()">No</button>
+            <button id="btn1"type="button" class="btn-yes " onclick="changeImage(), Happy.play() ">Yes</button>
+            <button id="btn2" type="button" class="btn-no" onclick="changemood(), Sad.play()">No</button>
         </div>
     </div>
     
@@ -34,7 +34,15 @@
 
             var button = document.getElementById('btn2');
             button.style.display = 'none';
+
+            
         }
+
+        var Happy = new Audio();
+            Happy.src = "./Happy.wav";
+
+            var Sad = new Audio();
+            Sad.src = "./Sad.mp3";
 
         function changemood(){
             var img = document.getElementById('myimg');
